@@ -68,8 +68,7 @@ header .profile-image {
 }
 
 .image{
-  width:450px;
-  height:250px;
+  max-width: 100%
 }
 
 .tag {
@@ -141,11 +140,21 @@ footer ul li {
   
   .flex {
       display: flex;
-      max-width: 1200px;
-      justify-content: ;
+      justify-content: center;
       margin: 0 auto;
+      flex-wrap: wrap;
   }
 
+  .flex div{
+    flex-basis: 45%;
+
+  }
+
+  .flex h2{
+    flex-basis: 100%;
+
+  }
+  
   header {
     min-height: 450px;
   }
@@ -176,5 +185,9 @@ footer ul li {
 
 @media screen and(min-width: 1024px){
 
+  .flex div{
+    flex-basis: 25%;
+
+  }
 
 }
