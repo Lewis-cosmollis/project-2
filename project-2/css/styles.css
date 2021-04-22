@@ -60,7 +60,7 @@ header {
   line-height: 1.5;
 }
 header .profile-image {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .image{
@@ -114,12 +114,19 @@ ul.skills {
 }
 
 footer {
+  justify-content: space-between;
+  display: flex;
   width: 100%;
   min-height: 30px;
   padding: 20px 0 40px 20px;
   font-weight: 900;
+  border-top: gray solid 1px;
 }
 
+footer ul{
+display:none;
+
+}
 
 
 
@@ -135,6 +142,7 @@ footer {
 
   .flex div{
     flex-basis: 45%;
+    padding: 0 10px;
 
   }
 
@@ -145,10 +153,18 @@ footer {
   
   header {
     min-height: 450px;
+    display: flex;
+    flex-direction:row-reverse;
   }
 
-  .nav {
-    max-width: 1200px;
+  header p{
+    padding-right: 1em;
+
+  }
+
+  .nav li {
+    display: inline-block;
+    background-color: transparent;   
   }
 
   .nav .name {
@@ -159,8 +175,24 @@ footer {
 
   footer {
     font-size: 1.3em;
-    max-width: 1200px;
     margin: 40px auto;
+  }
+
+  footer ul{
+    display: block;
+    list-style-type: none;
+
+  }
+
+  footer li{
+    display: inline-block;
+    margin-left: 5px;
+
+  }
+
+  .end{
+    display: none;
+
   }
 
 }
@@ -175,6 +207,11 @@ footer {
 
   .flex div{
     flex-basis: 30%;
+
+  }
+
+  footer li{
+    margin-right: 1em;
 
   }
 
