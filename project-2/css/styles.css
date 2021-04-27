@@ -210,6 +210,21 @@ display:none;
 
   }
 
+  h1{
+    padding-left: 1em;
+  }
+  
+  .big{
+    display:flex;
+    justify-content: space-between;
+
+  }
+
+  .main-nav{
+    width: auto;
+
+  }
+
   footer li{
     margin-right: 1em;
 
